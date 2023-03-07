@@ -20,7 +20,7 @@
   
   /* || typography */
   
-  h1, h2, h3 {
+  h1, h2, h3, div {
     font-family: 'Inter', sans-serif;
     color: black;
   }
@@ -37,7 +37,7 @@
     text-shadow: 2px 2px 10px black;
   }
   
-  h2 {
+  h2, #Título{
     font-size: 3rem;
     text-align: center;
   }
@@ -119,5 +119,21 @@
   }
   
   #img{
+    text-align: center;
+  }
+
+  span{
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  #ig{
+    width: 50px;
+  }
+  div{
+    font-size: 2rem;
+    text-align: center;
+  }
+  #input{
     text-align: center;
   }

@@ -4,12 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <title>Regras</title>
+    <title>Trote Solidário Uni-FACEF</title>
     <link rel="stylesheet" href="trotereal.css" />
     <link rel="shortcut icon" href="./assets/icon.png"/>
+    <script src="script.js"> </script>
   </head>
 
   <body>
+    <!-- Cabeçalho -->
 
     <header>
       <h1>Trote Solidário Uni-FACEF</h1>
@@ -22,16 +24,44 @@
         <li><a href="equipes.html">Equipes</a></li>
         <li><a href="calculadora.html">Calculadora</a></li>
       </ul>
+
     </nav>
 
+    <!-- conteúdo principal -->
     <main>
+      <!-- artigo -->
       <article>
-        <h2> Equipes </h2>
-        <p id="img"> 
-            <img src="./assets/equipes.png" alt="Equipes do Trote Solidário">
+        <h2>Kits de alimentação</h2>
+        <p>
+              <div>
+                Informe quantos kits de alimentação seu time arrecadou 
+              </div>
+              <p id="input"><input type="number" id="nro1"/> </p>
+            <div>
+                <button onclick="calcularKit()"> Calcular Pontos </button> 
+            </div>
+            <div>
+                <p id="calculo">
+                   Aqui vai aparecer o resultado
+                </p>
+        </p>
+        <h2>Doação de sangue</h2>
+        <p>
+              <div>
+                Informe quantas doações houveram 
+              </div>
+              <p id="input"><input type="number" id="nro2"/> </p>
+            <div>
+                <button onclick="calcularSangue()"> Calcular Pontos </button> 
+            </div>
+            <div>
+                <p id="calculo2">
+                   Aqui vai aparecer o resultado
+                </p>
         </p>
       </article>
 
+      <!-- Barrinha da direita -->
       <aside>
         <h4>Conteúdo Relacionado</h4>
 
@@ -41,8 +71,14 @@
           <li><a href="https://sga.unifacef.com.br/EddydataApp-war/pages/system/portal.jsf">PortalWeb</a></li>
           <li><a href="https://ava-grad.unifacef.com.br">Ambiente Virtual</a></li>
         </ul>
+        <!-- colocar ícones com as redes sociais da faculdade (youtube(?) e insagram)-->
+        <span>
+           <a href="https://www.instagram.com/unifacef/"><img id= ig src="./assets/ig_logo.png" alt="icone instagram"></a>
+        </span>
       </aside>
     </main>
+
+    <!-- Rodapé -->
 
     <footer>
       <p>| Av. Ismael Alonso y Alonso, 2400 - Bairro São José | CEP: 14.403-430 - Franca/SP | Fone: (16) 3713-4688 | <a href = "www.unifacef.com.br">www.unifacef.com.br</a> |</p>
