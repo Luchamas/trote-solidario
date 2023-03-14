@@ -31,9 +31,9 @@ function calcularSangue() {
   let nro2 = document.getElementById("nro2").value
   // processamento
   let calculo
- 
- resultado = nro2 * 15
- 
+
+  resultado = nro2 * 15
+
   // saída dos dados
   document.getElementById("calculo2").innerHTML =
     "Seu time pontuou " + resultado + " pontos"

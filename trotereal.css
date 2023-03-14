@@ -1,139 +1,163 @@
 /* || General setup */
 
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    font-size: 10px;
-    background-image: url(./assets/bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-  }
-  
-  body {
-    width: 70%;
-    margin: 0 auto;
-  }
-  
-  /* || typography */
-  
-  h1, h2, h3, div {
-    font-family: 'Inter', sans-serif;
-    color: black;
-  }
-  
-  p, input, li {
-    font-family: 'Arial', sans-serif;
-    color: #000000;
-  }
-  
-  h1 {
-    font-size: 4rem;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 10px black;
-  }
-  
-  h2, #Título{
-    font-size: 3rem;
-    text-align: center;
-  }
-  
-  h3 {
-    font-size: 2.2rem;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
-  h4{
-    font-size: 2.5rem;
-    text-align: left;
-    flex: auto;
-    font-family: 'Inter', sans-serif;
-    margin-left: 25px;
-  }
-  
-  p, li {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
-  
-  /* || header layout */
-  
-  nav, article, aside, footer {
-    background-color: white;
-    padding: 1%;
-  }
-  
-  nav {
-    height: 50px;
-    background-color: #6c5891;
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  nav ul {
-    padding: 0;
-    list-style-type: none;
-    flex: 2;
-    display: flex;
-  }
-  
-  nav li {
-    display: inline;
-    text-align: center;
-    flex: 1;
-  }
-  
-  nav a {
-    display: inline-block;
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-  }
-  
-  /* || main layout */
-  
-  main {
-    display: flex;
-  }
-  
-  article {
-    flex: 4;
-  }
-  
-  aside {
-    flex: 1;
-    margin-left: 10px;
-    background-color: whitesmoke;
-  }
-  
-  aside li {
-    padding-bottom: 10px;
-  }
+html {
+  font-size: 10px;
+  background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
 
-  footer {
-    margin-top: 10px;
-  }
-  
-  #img{
-    text-align: center;
-  }
+body {
+  width: 70%;
+  margin: 0 auto;
+}
 
-  span{
-    text-align: center;
-    margin-left: 30px;
-  }
+/* || typography */
 
-  #ig{
-    width: 50px;
-  }
-  div{
-    font-size: 2rem;
-    text-align: center;
-  }
-  #input{
-    text-align: center;
-  }
+h1,
+h2,
+h3,
+div {
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+
+p,
+input,
+li {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  padding: auto;
+  margin: auto;
+}
+
+h2,
+#Título {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+  text-align: left;
+  flex: auto;
+  font-family: "Inter", sans-serif;
+  margin-left: 25px;
+}
+
+h5 {
+  font-size: 1.8rem;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+}
+
+p,
+li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+
+header{
+  display: flex;
+}
+
+nav,
+article,
+aside,
+footer {
+  background-color: white;
+  padding: 1%;
+}
+
+nav {
+  height: 50px;
+  background-color: #6c5891;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: whitesmoke;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+#img {
+  text-align: center;
+}
+
+span {
+  text-align: center;
+  margin-left: 30px;
+}
+
+#ig {
+  width: 50px;
+  margin: 5px;
+}
+div {
+  font-size: 2rem;
+  text-align: center;
+}
+#input {
+  text-align: center;
+}
