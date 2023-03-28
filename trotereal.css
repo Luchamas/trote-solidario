@@ -1,4 +1,13 @@
 /* || General setup */
+.light {
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --navcolor: rgb(75, 75, 255);
+}
+
+.night {
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --navcolor: #6c5891;
+}
 
 html,
 body {
@@ -8,7 +17,7 @@ body {
 
 html {
   font-size: 10px;
-  background-image: url(./assets/bg-mobile.jpg);
+  background-image: var(--bg-url);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -39,8 +48,6 @@ li {
 h1 {
   font-size: 4rem;
   text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px black;
   padding: auto;
   margin: auto;
 }
@@ -77,7 +84,7 @@ li {
 
 /* || header layout */
 
-header{
+header {
   display: flex;
 }
 
@@ -91,7 +98,7 @@ footer {
 
 nav {
   height: 50px;
-  background-color: #6c5891;
+  background-color: var(--navcolor);
   display: flex;
   margin-bottom: 10px;
 }
@@ -160,4 +167,11 @@ div {
 }
 #input {
   text-align: center;
+}
+
+/* layout dos botões */
+
+#button2{
+  background-color: var(--navcolor);
+  color: white;
 }
