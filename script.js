@@ -40,18 +40,19 @@ function calcularSangue() {
 }
 
 function trocaSwitch() {
-  // vamos obter a página ou documento HTML
-  // na verdade, obteremos o elemento html (root)
-  const html = document.documentElement
-  // vamos verificar se no documento tem a classe claro
-  // if é o comando se
-  if (html.classList.contains("light")) {
-    // como o documento tem a classe claro, vamos remover
-    html.classList.remove("light")
-    html.classList.add("night")
-  } else {
-    // como o documento não tem a classe claro, vamos adicionar
-    html.classList.add("light")
-    html.classList.remove("night")
-  }
+  const rootElem = document.documentElement
+  let dataTheme = rootElem.getAttribute("data-theme")
+  let newTheme
+ //caso o novo tema seja luz trocar para noite, caso contrario deixar no luz
+  newTheme = dataTheme === "light" ? "night" : "light"
+
+  rootElem.setAttribute("data-theme", newTheme)
+ // local storage é onde fica armazenado as informações de qual tema está
+  localStorage.setItem("theme", newTheme)
+}
+//pega a informação do local storage
+let localS = localStorage.getItem("theme")
+//caso o night esteja no local storage ele define a pagina para o tema noturno
+if (localS === "night") {
+  document.documentElement.setAttribute("data-theme", "night" )
 }

@@ -1,12 +1,14 @@
 /* || General setup */
-.light {
+:root[data-theme = light] {
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --navcolor: rgb(75, 75, 255);
+  --logo: url(./assets/logo30anos.png)
 }
 
-.night {
+:root[data-theme = night] {
   --bg-url: url(./assets/bg-mobile.jpg);
   --navcolor: #6c5891;
+  --logo: url(./assets/logobranco.png)
 }
 
 html,
@@ -86,6 +88,11 @@ li {
 
 header {
   display: flex;
+}
+
+#logo{
+  src: "./assets/logobranco.png";
+  width: 400px
 }
 
 nav,
@@ -175,3 +182,4 @@ div {
   background-color: var(--navcolor);
   color: white;
 }
+
