@@ -2,13 +2,13 @@
 :root[data-theme = light] {
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --navcolor: rgb(75, 75, 255);
-  --logo: url(./assets/logo30anos.png)
+  --logo: url("./assets/logo30anos.png")
 }
 
 :root[data-theme = night] {
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url("./assets/bg-mobile.jpg");
   --navcolor: #6c5891;
-  --logo: url(./assets/logobranco.png)
+  --logo: url("./assets/logobranco.png")
 }
 
 html,
@@ -91,7 +91,7 @@ header {
 }
 
 #logo{
-  src: "./assets/logobranco.png";
+  content: var(--logo);
   width: 400px
 }
 
