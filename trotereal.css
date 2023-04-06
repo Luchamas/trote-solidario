@@ -40,6 +40,73 @@ div {
   color: black;
 }
 
+/* vamos entrar na section, que possui uma classe chamada module e no p de lá*/
+section.module p{
+  margin-bottom: 40px;
+
+}
+/* no ultimo item, para não ter a margin no final*/
+section.module:last-child{
+  margin-bottom: 0;
+}
+
+section.module h2{
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+/* agora entrando na classe com o nome de content, onde tem os textos (parte apenas dos textos)*/
+section.module.content{
+  padding: 40px 0;
+  background-color: #ece7d5;
+}
+section.module.parallax{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-bakcground-size: cover;
+}
+section.module.parallax:after{
+  content:"";
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  z-index: 8;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+section.module.parallax-1{
+  background-image: url(assets/UniFacef2.jpg);
+}
+
+section.module.parallax-2{
+  background-image: url(assets/facef2.jpeg);
+
+}
+
+section.module.parallax-3{
+  background-image: url(Parallax/assets/facef.jpg);
+
+}
+section.module.parallax h1{
+  color: #fff;
+  text-align: center;
+  font-size: 78px;
+  z-index: 50;
+  text-transform: uppercase;
+}
+
+
 p,
 input,
 li {
