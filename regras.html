@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-
     <title>Regras</title>
     <link rel="stylesheet" href="trotereal.css" />
     <link rel="shortcut icon" href="./assets/icon.png"/>
+    <script src="script.js"></script>
   </head>
 
   <body>
 
     <header>
-      <h1>Trote Solidário Uni-FACEF</h1>
+      <h1><img style="width: 400px" src="./assets/logo30anos.png" /></h1>
     </header>
 
     <nav>
@@ -20,18 +20,82 @@
         <li><a href="trotereal.html">Página Inicial</a></li>
         <li><a href="regras.html">Regras Gerais</a></li>
         <li><a href="equipes.html">Equipes</a></li>
-        <li><a href="#">Calculadora</a></li>
+        <li><a href="calculadora.html">Calculadora</a></li>
+        <li><button id="switch" onclick="trocaSwitch()">Mudar tema</button></li>
       </ul>
     </nav>
 
     <main>
       <article>
         <h2> Regras </h2>
+        <h3> INTRODUÇÃO </h3>
         <p> 
-            Cada curso deverá montar uma comissão composta por 8 (oito) estudantes,
-            sendo no mínimo 2 (dois) alunos de cada curso, e será responsável por representar a
-            turma perante a comissão organizadora da Edição de 2023 do Trote Solidário UniFACEF
+                O Centro Universitário Municipal de Franca - Uni-FACEF, criado em 1951, como
+          Faculdade de Ciências Econômicas é uma instituição pública, constituída como autarquia
+          municipal, que foca suas ações no desenvolvimento científico e cultural, na formação com
+          qualidade de profissionais de nível universitário, e também no fomento à promoção do
+          progresso social e do bem comum.
         </p>
+        <p>
+            Ao longo dos anos, o Uni-FACEF promove uma constante atualização de suas
+          atividades pedagógicas, legitimando seu trabalho acadêmico científico, na formação de
+          seus profissionais, proporcionando serviços de qualidade à sociedade. Tem-se como
+          objetivo maior a formação de cidadãos capacitados para a vida profissional e comunitária
+          que, pelo saber e pelo ser, atuarão positivamente em vários segmentos e instituições
+          sociais, colaborando para uma sociedade mais justa e solidária.
+        </p>
+        <p>
+            Atualmente, são oferecidos treze cursos de graduação: Administração, Ciência da
+          Computação, Ciências Contábeis, Comunicação Social com Habilitação em
+          Publicidade e Propaganda, Enfermagem, Engenharia Civil, Engenharia de Produção,
+          Engenharia de Software, Letras, Matemática, Medicina, Psicologia e Sistemas de
+          Informação.
+        </p>
+        <p>
+          O Uni-FACEF conta com professores mestres e doutores para o atendimento anual
+          de, aproximadamente, 2000 alunos, todos concursados em sua área de atuação. E
+          pensando na continuidade da formação, oferece, ainda, uma diversidade de cursos de pósgraduação Lato Sensu, com os cursos de MBA e Especializações e Stricto Sensu, com o
+          Programa de Mestrado Interdisciplinar em Desenvolvimento Regional, reconhecido pela
+          CAPES.
+        </p>
+        <p>    
+            Evidencia-se que os cursos do Uni-FACEF estão articulados com sua missão:
+          “Construir e difundir o conhecimento, contribuindo para a formação do ser humano,
+          a fim de que ele exerça o seu papel na sociedade com ética e cidadania”.
+          Especificamente, corresponde com as finalidades a que se propõe:
+        </p>
+        <p>
+          1. formar pessoas com habilidade tanto para um alto desempenho técnicoprofissional, quanto para o exercício da cidadania, com uma vivência ética e
+          participativa no mundo social;
+        </p>
+        <p>
+          2. promover a construção do conhecimento, a sua transmissão crítica e a
+          compreensão do mundo atual, particularmente no que se refere às necessidades
+          nacionais e regionais;
+        </p>
+        <p>
+          3. participar do desenvolvimento de condições e ações que evidenciem o “aprender a
+          aprender” e promovam a educação continuada, nos campos de atuação profissional
+          com que se identificam;
+        </p>
+        <p>
+          4. partilhar, com todos os segmentos da sociedade, da identificação, análise e busca
+          de soluções dos problemas da comunidade, tanto local e regional, quanto da
+          sociedade mais ampla, estimulados a participar em pesquisas científicas e a
+          publicar seus trabalhos em eventos.
+        </p>
+        <p> 
+          Nesse contexto, fomenta-se o Trote Solidário entre os calouros, como uma iniciativa
+          institucional, já presente no Uni-FACEF há 30 anos, visando à inserção do discente no
+          ambiente acadêmico, focando a promoção social, agregando em sua formação a
+          importância de esforços que tornem suas decisões mais éticas e humanas.
+        </p>
+        <h3> FORMATO </h3>
+        <p>A proposta para este ano são ações voltadas à comunidade, desde o ingresso
+          do estudante na IES. O chefe dos departamentos dos cursos (ou um docente por
+          ele indicado), atuará como padrinho dos calouros na orientação e condução das
+          provas a serem cumpridas pelos mesmos, contando com o apoio dos demais docentes
+          do curso. Assim, o TROTE SOLIDÁRIO Uni-FACEF 2023 contará com duas etapas:</p>
         <h3> 1ª ETAPA - GINCANA SOLIDÁRIA DE ARRECADAÇÃO </h3>
         <p>
           Serão formadas equipes pela Reitoria, de acordo com a
@@ -48,6 +112,21 @@
           destacar ainda, que a ordem das atividades, bem como da disposição das salas para
           entrega dos alimentos, e de apresentação no Encerramento, seguirá a ordem alfabética
           das cores.
+        </p>
+        <p>
+          As equipes serão responsáveis pelo planejamento, arrecadação e
+          armazenamento dos itens aqui relacionados. A entrega dos alimentos, dos
+          suplementos alimentares, bem como dos comprovantes de realização das provas da
+          Doação de Sangue e da Ação Social, para fins de pontuação, deverão ocorrer única e
+          exclusivamente, das 8h às 10h00, no dia 29/03/2023, na Unidade I (Av. Major
+         Nicácio, 2433),
+        </p>
+        <h5>ALIMENTOS E SUPLEMENTOS - METAS POR EQUIPE</h5>
+        <p>
+          Esta etapa consiste na arrecadação/doação, pelos calouros, de itens
+          alimentícios que serão posteriormente entregues a entidades e instituições francanas
+          de assistência social e suplementos alimentares destinados às atividades dos
+          Voluntários da Saúde, que atuam no Hospital de Câncer de Franca.
         </p>
         <h3> 2ª ETAPA - INTEGRAÇÃO E ENVOLVIMENTO </h3>
         <p>
@@ -87,16 +166,50 @@
             PONTUAÇÃO DESTA ATIVIDADE = 2.000 pontos
           </p>
         </p>
+        <h3> OBSERVAÇÕES FINAIS </h3>
+        <p>
+          1. Na noite de encerramento, é obrigatória a presença dos estudantes, vinculada à
+          emissão de certificado de participação na gincana TROTE SOLIDÁRIO Uni-FACEF
+          2023.
+        </p>
+        <p>
+          2. As equipes deverão entregar registros da realização da PRIMEIRA ETAPA, por
+          meio de fotos e vídeos. Os registros deverão ser gravados no mesmo pendrive do
+          registro da Ação Social. Esse material será utilizado para fins de documentação e
+          acervo do Uni-FACEF e deverá ser entregue no dia 29/03/2023, das 8h às 10h00,
+          na Unidade I, juntamente com os demais itens. Atribuir-se-á 500 pontos para o
+          conjunto de fotos e 500 pontos para o conjunto de vídeos. O resultado será
+          divulgado na noite de encerramento.
+        </p>
+        <p>
+          3. É proibido pedir donativos em dinheiro em nome específico do Hospital do Câncer
+          ou de alguma entidade filantrópica. Deve-se informar que a doação é destinada ao
+          TROTE SOLIDÁRIO Uni-FACEF 2023. Em caso de necessidade de ofício, procurar
+          a Coordenação em cada uma das Unidades.
+        </p>
+        <p>
+          4. É vedado o uso de Apitos, Buzinas e demais apetrechos que emitam sons
+          excessivos, além de efeitos pirotécnicos, sob pena de perda de pontos.
+        </p>
+        <p>
+          5. Os Resultados das arrecadações da Faze 1 serão distribuídos entre as Entidades
+          que enviarem ofício ao Uni-FACEF, priorizando a ordem de chegada, com exceção
+          dos suplementos que serão direcionados aos Voluntários da Saúde.
+        </p>
+        <p>
+          6. Os casos omissos ao presente Regulamento serão avaliados pela Comissão
+          Organizadora.
+        </p>
       </article>
 
       <aside>
         <h4>Conteúdo Relacionado</h4>
 
         <ul>
-          <li><a href="https://www.unifacef.com.br">Site do Uni-FACEF</a></li>
-          <li><a href="https://www.unifacef.com.br/wp-content/uploads/2023/02/TROTE-SOLIDÁRIO-2023-REGULAMENTO-v2-2.pdf">Regulamento oficial do Trote Solidário</a></li>
-          <li><a href="https://sga.unifacef.com.br/EddydataApp-war/pages/system/portal.jsf">PortalWeb</a></li>
-          <li><a href="https://ava-grad.unifacef.com.br">Ambiente Virtual</a></li>
+          <li><a href="https://www.unifacef.com.br" target="_blank">Site do Uni-FACEF</a></li>
+          <li><a href="https://www.unifacef.com.br/wp-content/uploads/2023/02/TROTE-SOLIDÁRIO-2023-REGULAMENTO-v2-2.pdf" target="_blank">Regulamento oficial do Trote Solidário</a></li>
+          <li><a href="https://sga.unifacef.com.br/EddydataApp-war/pages/system/portal.jsf" target="_blank">PortalWeb</a></li>
+          <li><a href="https://ava-grad.unifacef.com.br" target="_blank">Ambiente Virtual</a></li>
         </ul>
       </aside>
     </main>

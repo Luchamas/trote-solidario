@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Trote Solidário Uni-FACEF</title>
+    <link rel="stylesheet" href="trotereal.css" />
+    <link rel="shortcut icon" href="./assets/icon.png"/>
+    <script src="script.js"> </script>
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+
+    <header>
+      <h1><img style="width: 400px" src="./assets/logo30anos.png" /></h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="trotereal.html">Página Inicial</a></li>
+        <li><a href="regras.html">Regras Gerais</a></li>
+        <li><a href="equipes.html">Equipes</a></li>
+        <li><a href="calculadora.html">Calculadora</a></li>
+        <li><button id="switch" onclick="trocaSwitch()">Mudar tema</button></li>
+      </ul>
+
+    </nav>
+
+    <!-- conteúdo principal -->
+    <main>
+      <!-- artigo -->
+      <article>
+        <h2>Kits de alimentação</h2>
+        <p>
+              <div>
+                Informe quantos kits de alimentação seu time arrecadou 
+              </div>
+              <p id="input"><input type="number" id="nro1"/> </p>
+            <div>
+                <button id="button2" onclick="calcularKit()"> Calcular Pontos </button> 
+            </div>
+            <div>
+                <p id="calculo">
+                   Aqui vai aparecer o resultado
+                </p>
+        </p>
+        <h2>Doação de sangue</h2>
+        <p>
+              <div>
+                Informe quantas doações houveram 
+              </div>
+              <p id="input"><input type="number" id="nro2"/> </p>
+            <div>
+                <button id="button2" onclick="calcularSangue()"> Calcular Pontos </button> 
+            </div>
+            <div>
+                <p id="calculo2">
+                   Aqui vai aparecer o resultado
+                </p>
+        </p>
+        <h2 id="final"></h2>
+      </article>
+
+      <!-- Barrinha da direita -->
+      <aside>
+        <h4>Conteúdo Relacionado</h4>
+
+        <ul>
+          <li><a href="https://www.unifacef.com.br" target="_blank">Site do Uni-FACEF</a></li>
+          <li><a href="https://www.unifacef.com.br/wp-content/uploads/2023/02/TROTE-SOLIDÁRIO-2023-REGULAMENTO-v2-2.pdf" target="_blank">Regulamento oficial do Trote Solidário</a></li>
+          <li><a href="https://sga.unifacef.com.br/EddydataApp-war/pages/system/portal.jsf" target="_blank">PortalWeb</a></li>
+          <li><a href="https://ava-grad.unifacef.com.br" target="_blank">Ambiente Virtual</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- Rodapé -->
+
+    <footer>
+      <p>| Av. Ismael Alonso y Alonso, 2400 - Bairro São José | CEP: 14.403-430 - Franca/SP | Fone: (16) 3713-4688 | <a href = "www.unifacef.com.br">www.unifacef.com.br</a> |</p>
+    </footer>
+  </body>
+</html>
