@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="trotereal.css" />
     <link rel="shortcut icon" href="./assets/icon.png"/>
     <script src="script.js"> </script>
+    <script src="calculadora.js"></script>
   </head>
 
   <body>
     <!-- Cabeçalho -->
 
     <header>
-      <h1><img style="width: 400px" src="./assets/logo30anos.png" /></h1>
+      <h1><img id="logo" style="width: 400px" src="./assets/logo30anos.png" /></h1>
     </header>
 
     <nav>
@@ -32,19 +33,17 @@
     <main>
       <!-- artigo -->
       <article>
-        <h2>Kits de alimentação</h2>
+           <h2>Kits de alimentação</h2>
         <p>
               <div>
-                Informe quantos kits de alimentação seu time arrecadou 
+                Informe quantos kits de alimentação seu time arrecadou (máx: 80)
               </div>
-              <p id="input"><input type="number" id="nro1"/> </p>
+              <p id="input"><input type="number" id="nro1" min="0" max="80"/> </p>
             <div>
                 <button id="button2" onclick="calcularKit()"> Calcular Pontos </button> 
             </div>
             <div>
-                <p id="calculo">
-                   Aqui vai aparecer o resultado
-                </p>
+                <p id="calculo"></p>
         </p>
         <h2>Doação de sangue</h2>
         <p>
@@ -56,11 +55,36 @@
                 <button id="button2" onclick="calcularSangue()"> Calcular Pontos </button> 
             </div>
             <div>
-                <p id="calculo2">
-                   Aqui vai aparecer o resultado
-                </p>
+                <p id="calculo2"></p>
         </p>
-        <h2 id="final"></h2>
+         <h2> Itens adicionais Kit alimentação + suplemento </h2>
+        <div id="container">
+            <p>
+                <input onclick="verificaChecagem('padrao')" type="checkbox" id="padrao" /> Conjunto Padrão 
+                <input type="number" id="qtdePadrao" disabled="true"/>
+            </p>
+            <p>
+                <input onclick="verificaChecagem('kit')" type="checkbox" id="kit" /> Kit Alimentação 
+                <input type="number" id="qtdeKit" disabled="true"/>
+            </p>
+            <p>
+                <input onclick="verificaChecagem('suplemento')" type="checkbox" id="suplemento" /> Suplemento 
+                <input type="number" id="qtdeSuplemento" disabled="true"/>
+            </p>
+            <p>
+                <input onclick="verificaChecagem('arroz')" type="checkbox" id="arroz" /> Arroz 
+                <input type="number" id="qtdeArroz" disabled="true"/>
+            </p>
+            <p>
+                <button id="button2" onclick="calcularAdicional()"> 
+                    Calcular Adicional 
+                </button> 
+              </p>
+            <p>
+                <p id="total">
+
+                </p>
+              </p>
       </article>
 
       <!-- Barrinha da direita -->
