@@ -12,23 +12,29 @@
 
   <!-- efeito parallax -->
   <section class="module parallax parallax-1">
-    <h1><img id="logo" src="" /></h1>
-
-</section>
+    <h1><img id="" src="./assets/logobranco.png" /></h1>
+  </section>
 
   <body>
     <!-- Cabeçalho -->
 
-
-    <nav>
-      <ul>
-        <li><a href="trotereal.html">Página Inicial</a></li>
-        <li><a href="regras.html">Regras Gerais</a></li>
-        <li><a href="equipes.html">Equipes</a></li>
-        <li><a href="calculadora.html">Calculadora</a></li>
-        <li><button id="switch" onclick="trocaSwitch()">Mudar tema</button></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navbar">
+          
+          <ul class="nav-menu zap">
+            <li class="nav-item"><a href="trotereal.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="regras.html" class="nav-link">Regras</a></li>
+            <li class="nav-item"><a href="equipes.html" class="nav-link">Equipes</a></li>
+            <li class="nav-item"><a href="calculadora.html" class="nav-link">Calculadora</a></li>
+            <li class="nav-item"><button id="switch" onclick="trocaSwitch()">Mudar tema</button></li>
+          </ul>
+          <div class="responsa">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+  </header>
 
     <!-- conteúdo principal -->
     <main>
@@ -123,6 +129,36 @@
       </aside>
     </main>
 
+    <div class="responsive-bar">
+      <h4>Conteúdo Relacionado</h4>
+
+        <ul>
+          <li>
+            <a href="https://www.unifacef.com.br" target="_blank"
+              >Site do Uni-FACEF</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.unifacef.com.br/wp-content/uploads/2023/02/TROTE-SOLIDÁRIO-2023-REGULAMENTO-v2-2.pdf"
+              target="_blank"
+              >Regulamento oficial do Trote Solidário</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sga.unifacef.com.br/EddydataApp-war/pages/system/portal.jsf"
+              target="_blank"
+              >PortalWeb</a
+            >
+          </li>
+          <li>
+            <a href="https://ava-grad.unifacef.com.br" target="_blank"
+              >Ambiente Virtual</a
+            >
+          </li>
+        </ul>
+    </div>
     <!-- Rodapé -->
 
     <footer>
@@ -141,5 +177,6 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </footer>
+    <script src="nav.js"></script>
   </body>
 </html>
