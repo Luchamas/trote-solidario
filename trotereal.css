@@ -1,39 +1,37 @@
 /* || General setup */
-:root[data-theme = light] {
+:root[data-theme="light"] {
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --navcolor: rgb(75, 75, 255);
-  --logo: url("./assets/logo30anos.png")
+  --logo: url("./assets/logo30anos.png");
 }
 
-:root[data-theme = night] {
+:root[data-theme="night"] {
   --bg-url: url("./assets/bg-mobile.jpg");
   --navcolor: #6c5891;
-  --logo: url("./assets/logobranco.png")
+  --logo: url("./assets/logobranco.png");
 }
 
-
-
-.tr{
+.tr {
   border: 1px solid black;
 }
-.table-container{
+.table-container {
   padding: 0 10%;
   margin: 40px auto 0;
 }
-.heading{
+.heading {
   font-size: 40px;
   text-align: center;
   color: #111111;
   margin-bottom: 40px;
 }
-.table{
+.table {
   width: 100%;
   border-collapse: collapse;
 }
-.table thead{
+.table thead {
   background-color: #2877ee;
 }
-.table thead tr th{
+.table thead tr th {
   font-size: 14px;
   font-weight: medium;
   letter-spacing: #000000;
@@ -42,23 +40,23 @@
   vertical-align: top;
   border: 1px solid #111111;
 }
-td.laranja{
+td.laranja {
   background-color: #ff7a22;
 }
-td.vermelha{
-  background-color: #fc2929
+td.vermelha {
+  background-color: #fc2929;
 }
-td.roxa{
+td.roxa {
   background-color: #7429ff;
 }
-td.amarela{
+td.amarela {
   background-color: #efff16;
 }
-td.verde{
+td.verde {
   background-color: #00ff00;
 }
 
-.table tbody tr td{
+.table tbody tr td {
   font-size: 16px;
   letter-spacing: 0.35px;
   font-weight: normal;
@@ -67,13 +65,12 @@ td.verde{
   text-align: center;
   border: 1px solid #111111;
 }
-.table .text_open{
+.table .text_open {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.35px;
-  color: #FF1046;
+  color: #ff1046;
 }
-
 
 html,
 body {
@@ -105,27 +102,26 @@ div {
 }
 
 /* vamos entrar na section, que possui uma classe chamada module e no p de lá*/
-section.module p{
+section.module p {
   margin-bottom: 40px;
-
 }
 /* no ultimo item, para não ter a margin no final*/
-section.module:last-child{
+section.module:last-child {
   margin-bottom: 0;
 }
 
-section.module h2{
+section.module h2 {
   margin-bottom: 40px;
   font-size: 30px;
 }
 
 /* agora entrando na classe com o nome de content, onde tem os textos (parte apenas dos textos)*/
-section.module.content{
+section.module.content {
   padding: 40px 0;
   background-color: #ece7d5;
 }
-section.module.parallax{
-  display:flex;
+section.module.parallax {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh !important;
@@ -140,38 +136,38 @@ section.module.parallax{
   -moz-background-size: cover;
   -o-bakcground-size: cover;
 }
-section.module.parallax:after{
-  content:"";
+section.module.parallax:after {
+  content: "";
   height: 100%;
   width: 100%;
-  position:absolute;
+  position: absolute;
   z-index: 8;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 40%,
+    #000 100%
+  );
 }
 
-section.module.parallax-1{
+section.module.parallax-1 {
   background-image: url(assets/UniFacef2.jpg);
 }
 
-section.module.parallax-2{
+section.module.parallax-2 {
   background-image: url(assets/facef2.jpeg);
-
 }
 
-section.module.parallax-3{
+section.module.parallax-3 {
   background-image: url(Parallax/assets/facef.jpg);
-
 }
-section.module.parallax h1{
+section.module.parallax h1 {
   color: #fff;
   text-align: center;
   font-size: 78px;
   z-index: 50;
   text-transform: uppercase;
 }
-
-
-
 
 p,
 input,
@@ -219,11 +215,9 @@ li {
 
 /* || header layout */
 
-
-
-#logo{
+#logo {
   content: var(--logo);
-  width: 400px
+  width: 400px;
 }
 
 nav,
@@ -235,7 +229,6 @@ footer {
 }
 
 nav {
-
   background-color: var(--navcolor);
   display: flex;
   margin-bottom: 10px;
@@ -262,39 +255,39 @@ nav a {
   color: black;
 }
 
-.navbar{
+.navbar {
   min-height: 70px;
-  
+
   display: flex;
   background-color: var(--navcolor);
   align-items: center;
   justify-content: space-between;
   padding: 0 34px;
 }
-.nav-menu{
+.nav-menu {
   display: flex;
   align-items: center;
   gap: 60px;
 }
-.nav-link{
+.nav-link {
   transition: 0.5s ease;
 }
-.nav-link:hover{
+.nav-link:hover {
   color: #fff;
   cursor: pointer;
 }
-.responsa{
-display: none;
-cursor: pointer;
+.responsa {
+  display: none;
+  cursor: pointer;
 }
-.bar{
-display: block;
-width: 28px;
-height: 3px;
-border-radius: 2px;
-margin: 5px auto;
-background-color: #fff;
-transition: all 0.3s ease-in-out;
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 /* || main layout */
@@ -341,45 +334,51 @@ div {
 #input {
   text-align: center;
 }
-div.responsive-bar{
+div.responsive-bar {
   display: none;
 }
 
-
 /* layout dos botões */
 
-#button2{
+#button2 {
   background-color: var(--navcolor);
   color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
+#switch {
+  border-radius: 10px;
+  padding: 5px 10px;
+}
 
-
-@media (max-width: 768px){
-
-  .navbar{
+@media (max-width: 768px) {
+  .navbar {
     z-index: 2;
   }
   body {
     width: 100%;
     margin: 0 auto;
   }
-  .table thead{
+  .table thead {
     display: none;
   }
-  .table, .table tbody, .table tr, .table td{
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
     display: block;
     width: 90%;
   }
-  .table tr{
+  .table tr {
     margin-bottom: 15px;
   }
-  .table tbody tr td{
+  .table tbody tr td {
     text-align: right;
     padding-left: 50%;
     position: relative;
   }
-  .table td:before{
+  .table td:before {
     content: attr(data-label);
     position: absolute;
     left: 0;
@@ -390,28 +389,28 @@ div.responsive-bar{
     text-align: left;
   }
   aside {
-  display: none;
+    display: none;
   }
-  div.responsive-bar{
+  div.responsive-bar {
     display: block;
     background-color: white;
   }
 
-  .responsa{
+  .responsa {
     display: block;
   }
 
-  .responsa.active .bar:nth-child(2){
+  .responsa.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .responsa.active .bar:nth-child(1){
+  .responsa.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .responsa.active .bar:nth-child(3){
+  .responsa.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .nav-menu{
-    position:absolute;
+  .nav-menu {
+    position: absolute;
     left: -100%;
     top: 410px;
     gap: 0;
@@ -421,13 +420,10 @@ div.responsive-bar{
     flex-direction: column;
     width: 100%;
     transition: 0.3s;
-    
   }
 
-  
-.zap{
-    
-    position:absolute;
+  .zap {
+    position: absolute;
     left: -100%;
     top: 630px;
     gap: 0;
@@ -439,19 +435,17 @@ div.responsive-bar{
     transition: 0.3s;
   }
 
-  .fofo{
+  .fofo {
     z-index: 1;
   }
-  .responsa{
+  .responsa {
     z-index: 2;
   }
-  
 
-  .nav-item{
+  .nav-item {
     margin: 16px 0;
   }
-  .nav-menu.active{
+  .nav-menu.active {
     left: 0;
   }
 }
-

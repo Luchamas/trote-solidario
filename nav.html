@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="" class="logo">Trote Solidário</a>
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="trotereal.html" class="nav-link">Início</a></li>
+              <li class="nav-item"><a href="regras.html" class="nav-link">Regras</a></li>
+              <li class="nav-item"><a href="equipes.html" class="nav-link">Equipes</a></li>
+              <li class="nav-item"><a href="calculadora.html" class="nav-link">Calculadora</a></li>
+              <li class="nav-item"><button id="switch" onclick="trocaSwitch()">Mudar tema</button></li>
+            </ul>
+            <div class="responsa">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+    </header>
+    <article>
+      
+        <div class="table-container">
+          <h1 class="heading">Tabela de Equipes</h1>
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>Equipes</th>
+                      <th>Cursos</th>
+                      <th>Alunos</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td data-label="Equipes" class="laranja">Laranja</td>
+                      <td data-label="Cursos">Administração Diurno<br>Administração Noturno<br>Comunicação Social</td>
+                      <td data-label="Alunos">88</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Equipes" class="vermelha">Vermelha</td>
+                      <td data-label="Cursos">Ciência da Computação<br>Engenharia Civil<br>Engenharia de Produção<br>Sistemas de Informação</td>
+                      <td data-label="Alunos">89</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Equipes" class="roxa">Roxa</td>
+                      <td data-label="Cursos">Enfermagem<br>Medicina</td>
+                      <td data-label="Alunos">84</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Equipes" class="amarela">Amarela</td>
+                      <td data-label="Cursos">Ciências Contábeis<br>Engenharia de Software</td>
+                      <td data-label="Alunos">84</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Equipes" class="verde">Verde</td>
+                      <td data-label="Cursos">Letras<br>Matemática<br>Psicologia</td>
+                      <td data-label="Alunos">86</td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      </article>
+    <script src="nav.js"></script>
+</body>
+
+</html>

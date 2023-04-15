@@ -7,10 +7,6 @@
     <title>Trote Solidário Uni-FACEF</title>
     <link rel="stylesheet" href="trotereal.css" />
     <link rel="shortcut icon" href="./assets/icon.png"/>
-
-
-    <script src="script.js"> </script>
-
     <script src="calculadora.js"></script>
   </head>
 
@@ -19,7 +15,6 @@
 
     <h1><img id="logo" style="width: 400px" src="./assets/logo30anos.png" /></h1>
     <header>
-
       <nav class="navbar">
           
           <ul class="nav-menu">
@@ -35,26 +30,19 @@
             <span class="bar"></span>
           </div>
         </nav>
-
-      <h1><img id="logo" style="width: 400px" src="./assets/logo30anos.png" /></h1>
-
     </header>
 
     <!-- conteúdo principal -->
     <main>
       <!-- artigo -->
       <article>
-
            <div class="calculadora">
             <h2>Kits de alimentação</h2>
-
-           <h2>Kits de alimentação</h2>
-
         <p>
               <div>
-                Informe quantos kits de alimentação seu time arrecadou (máx: 80)
+                Informe quantos kits de alimentação seu time arrecadou (máx.: 80)
               </div>
-              <p id="input"><input type="number" id="nro1" min="0" max="80"/> </p>
+              <p id="input"><input type="number" id="nro1"/> </p>
             <div>
                 <button id="button2" onclick="calcularKit()"> Calcular Pontos </button> 
             </div>
@@ -74,7 +62,7 @@
                 <p id="calculo2"></p>
         </p>
          <h2> Itens adicionais Kit alimentação + suplemento </h2>
-        <div id="container">
+        <div>
             <p>
                 <input onclick="verificaChecagem('padrao')" type="checkbox" id="padrao" /> Conjunto Padrão 
                 <input type="number" id="qtdePadrao" disabled="true"/>
@@ -88,8 +76,20 @@
                 <input type="number" id="qtdeSuplemento" disabled="true"/>
             </p>
             <p>
-                <input onclick="verificaChecagem('arroz')" type="checkbox" id="arroz" /> Arroz 
+                <input onclick="verificaChecagem('arroz')" type="checkbox" id="arroz" /> Arroz (05 Kg)
                 <input type="number" id="qtdeArroz" disabled="true"/>
+            </p>
+            <p>
+                <input onclick="verificaChecagem('feijao')" type="checkbox" id="feijao" /> Feijão (02 Kg)
+                <input type="number" id="qtdeFeijao" disabled="true"/>
+            </p>
+            <p>
+                <input onclick="verificaChecagem('macarrao')" type="checkbox" id="macarrao" /> Macarrão (500g) 
+                <input type="number" id="qtdeMacarrao" disabled="true"/>
+            </p>
+            <p>
+                <input onclick="verificaChecagem('oleo')" type="checkbox" id="oleo" /> Óleo (900ml)
+                <input type="number" id="qtdeOleo" disabled="true"/>
             </p>
             <p>
                 <button id="button2" onclick="calcularAdicional()"> 
@@ -98,12 +98,57 @@
               </p>
             <p>
                 <p id="total">
-
                 </p>
               </p>
-
+              <h2>Como são contabilizados os pontos?</h2>
+              <p>Os pontos são contabilizados de acordo com a tabela abaixo:</p>
+              <table class="table" style="width:80%; margin-left: 80px;">
+              <thead>
+                  <tr>
+                      <th>Item</th>
+                      <th>Pontos</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td data-label="Item">Conjunto padrão</td>
+                      <td data-label="Pontos">Caso 80 kits forem entregues, 5000 pontos </br> Caso 64 kits forem entregues, 4000 pontos </br> Caso 40 kits forem entregues, 2500 pontos </br> Caso 16 kits forem entregues, 1000 pontos </br> Com menos de 16 kits entregues, 0 pontos</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Item">Doação de sangue</td>
+                      <td data-label="Pontos">15 pontos</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Item">Conjunto padrão (avulso)</td>
+                      <td data-label="Pontos">50 pontos</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Item">Kit alimentação</td>
+                      <td data-label="Pontos">10 pontos</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Item">Lata de suplemento</td>
+                      <td data-label="Pontos">10 pontos</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Item">Pacote de Arroz de 05 Kg</td>
+                      <td data-label="Pontos">5 pontos</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Item">Pacote de Feijão de 02 Kg</td>
+                      <td data-label="Pontos">2 pontos</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Item">Pacote de Macarrão de 500 gramas</td>
+                      <td data-label="Pontos">1/2 ponto</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Item">Óleo 900 ml</td>
+                      <td data-label="Pontos">1 ponto</td>
+                  </tr>
+              </tbody>
+            </table>        
            </div>
-
       </article>
 
       <!-- Barrinha da direita -->

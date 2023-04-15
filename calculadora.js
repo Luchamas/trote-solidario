@@ -53,6 +53,18 @@ function verificaChecagem(texto) {
     document.getElementById("qtdeArroz").disabled =
       !document.getElementById("qtdeArroz").disabled
   }
+  if (texto == "feijao") {
+    document.getElementById("qtdeFeijao").disabled =
+      !document.getElementById("qtdeFeijao").disabled
+  }
+  if (texto == "macarrao") {
+    document.getElementById("qtdeMacarrao").disabled =
+      !document.getElementById("qtdeMacarrao").disabled
+  }
+  if (texto == "oleo") {
+    document.getElementById("qtdeOleo").disabled =
+      !document.getElementById("qtdeOleo").disabled
+  }
 }
 
 function calcularAdicional() {
@@ -73,5 +85,18 @@ function calcularAdicional() {
   if (document.getElementById("arroz").checked) {
     total = total + 5 * document.getElementById("qtdeArroz").value
   }
-  document.getElementById("total").innerHTML = "O total é " + total
+
+  if (document.getElementById("feijao").checked) {
+    total = total + 2 * document.getElementById("qtdeFeijao").value
+  }
+
+  if (document.getElementById("macarrao").checked) {
+    total = total + 0.5 * document.getElementById("qtdeMacarrao").value
+  }
+
+  if (document.getElementById("oleo").checked) {
+    total = total + 1 * document.getElementById("qtdeOleo").value
+  }
+  document.getElementById("total").innerHTML =
+    "Seu time pontuou " + total + " pontos"
 }
